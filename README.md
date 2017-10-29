@@ -7,11 +7,15 @@ Some Fritzing parts I used, I made myself. See: https://github.com/TD-er/fritzin
 
 Rev 1 of the PCB appeared to have incorrect hole diameter for the NodeMCU, so that board should not be produced by anyone.
 Too bad I discovered this after production of the PCB.
+
 For the rev. 2 of this board, I used the free Gerber PCB viewer [ZofzPCB](https://www.zofzpcb.com/)
 This viewer can inspect all hole diameters and net routes.
 Also the distances between holes are easy to inspect.
 
 Too bad loading the Gerber files takes about 25 minutes on my Core i7 laptop. Therefore the Zofz project file is also included.
+
+N.B. make sure no unnecessary small hole diameter is used. Some PCB manufacturers charge extra for small drill diameters (e.g. less than 30 mil diameter). Fritzing uses very small drill holes for a via. In this revision, I only used via's on locations where already was a drill hole for a soldering pin.
+This version has no drill holes less than 30 mil diameter.
 
 ## Rev 2 PCB
 
