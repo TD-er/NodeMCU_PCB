@@ -29,8 +29,19 @@ This board has room for:
 * [MH-Z19](http://www.winsen-sensor.com/products/ndir-co2-sensor/mh-z19.html) or [SenseAir S8](https://senseair.com/products/size-counts/s8-residential/) CO2 sensor.
 * Numerous I2C pinout combinations for almost all sensor sold at webshops.
 * Two pull-up resistors for the I2C lines.
-* Easy access to pins 5V, D3 and D4 (used as RX/TX when CO2 sensor is connected)
+* Easy access to pins 5V, D3 (GPIO-0) and D4 (GPIO-2), which will be used as RX/TX when CO2 sensor is connected.
 * Easy access to hardware SPI pins
+
+Used pins:
+* D1 (GPIO5)  SCL
+* D2 (GPIO4)  SDA
+* D3 (GPIO0)  TX
+* D4 (GPIO2)  RX
+* D5 (GPIO14) HSCLK
+* D6 (GPIO12) HMISO
+* D7 (GPIO13) HMOSI
+* D8 (GPIO15) HCS
+
 
 ### Suitable enclosure
 The PCB fits exactly in the [75 x 54 x 27mm ABS plastic case](https://www.banggood.com/10pcs-DIY-Plastic-Project-Housing-Electronic-Junction-Case-Power-Supply-Box-p-1168741.html?p=1712161907732201507C) with the USB port of the NodeMCU in front of the hole in the case.
